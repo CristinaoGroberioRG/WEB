@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="global-styles.css">
+
+  <title>RG Cidadão</title>
+</head>
+<body>
+  <div id="LoginForm">
+    <img src="assets/logo-rgsystem-branca.png" class="logo-rg-login" width="120px;" height="45px;" />
+    <div class="container">
+      <div class="login-form">
+        <div class="main-div row-spaced-5">
+          <div class="panel">
+            <img src="assets/logo-cidadao.png" width="30%;" />
+            <h2 class="row-spaced">Bem-vindo ao RG Cidadão Web</h2>
+            <p>Por favor, informe seu usuário e senha.</p>
+          </div>
+          <form id="formLogin">
+            <div class="form-group">
+              <label for="login" class="d-none">Usuário</label>
+              <input type="text" class="form-control" id="login" name="login" placeholder="Usuário" required>
+            </div>
+            <div class="form-group position-relative">
+              <label for="password" class="d-none">Senha</label>
+              <input type="password" class="form-control" id="password" name="password" placeholder="Senha" required>
+              <!-- <i class="position-absolute password-icon"></i> -->
+            </div>
+            <div class="form-group">
+              <label for="server" class="d-none">Município</label>
+              <select class="form-control" id="server" name="server" required>
+                <option disabled selected="selected" value="">Município</option>
+              </select>
+            </div>
+            <button id="btnLogar" type="submit" class="btn btn-primary">Logar</button>
+            <div class="forgot">
+              <a href="recuperar-senha">Esqueceu a senha?</a>
+            </div>
+          </form>
+        </div>
+        <p class="botto-text"> &copy; 2020 - RG System </p>
+      </div>
+    </div>
+  </div>
+  
+  <script src="./packages/spark-md5.js"></script>
+  <script src="./packages/sweetalert.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
